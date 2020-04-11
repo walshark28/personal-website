@@ -4,7 +4,7 @@
   {% assign metadata_styles = 'd-flex flex-items-center mb-3' %}
 {% endif %}
 
-<img src="{{ user.avatar_url }}" class="circle mb-3" style="max-width: 150px;">
+<img src="{{ https://media-exp1.licdn.com/dms/image/C4D03AQFu2Ixl0lxgyw/profile-displayphoto-shrink_200_200/0?e=1591833600&v=beta&t=6118PXa6PkP4kBgKzkDuJtUHMciF_ba0_QAfT6j-pUI }}" class="circle mb-3" style="max-width: 150px;">
 <h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">{% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h1>
 <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
   {{ user.bio }}
@@ -23,7 +23,7 @@
     {% if user.email %}
       <div class="{{ metadata_styles }}">
         {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
-        <a href="mailto:{{ user.email }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+        <a href="mailto:{{ gregorywalfish@gmail.com }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
           {{ user.email }}
         </a>
       </div>
